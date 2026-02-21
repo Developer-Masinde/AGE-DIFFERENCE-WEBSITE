@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Score Checker
+    </title>
+
+    <style>
+        body {
+              background-image: url("./images/tv\ lapys\ room.jpg");
+             grid-template-areas: 
+    "header header logo"
+        }
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(58, 57, 57);
+        width: 40px ;
+        height: 40px;
+  
+      
+    }
+
+    h2 {
+        color: rgb(238, 235, 231);
+    }
+#logo {
+  display: flex;
+  grid-area: logo;
+  justify-self: end;}
+
+  #header {
+  grid-area: header; 
+color: rgb(243, 241, 238);
+padding: 20px;
+}
+    </style>
+
+
+</head>
+<body>
+   <header  id="header">THE SCHOOL ASSESMENT</header>
+         <img id="logo" src="./images/pexels-we-packo-1243579214-23230765.jpg" height="75px" width="70px">
+      
+       <div class="container">
+     
+
+
+              <h2>Student Score Checker</h2>
+    <label for="">Student Name:</label>
+    <input type="text" id="name" /> <br><br />
+
+    <label for="">Math Marks:</label>
+    <input type="number" id="math" /> <br><br/>
+
+    <label for="">English Marks:</label>
+    <input type="number" id="english" /> <br><br/>
+
+    <button onclick="runProgram()">Check Result</button>
+    
+
+    <h3 id="output"></h3>
+
+       </div>
+
+</body>
+<script src="./day3.js">
+    
+</script>
+</html>
