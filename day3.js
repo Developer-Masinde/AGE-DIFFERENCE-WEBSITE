@@ -8,7 +8,6 @@ const checkpasspo = (total) => {
   return total >= 20;
 };
 
-
 // Anonymous Function
 const displayResult = function (name, total, passed) {
   let message = "student:" + name + "<br>";
@@ -27,5 +26,3 @@ function runProgram() {
   let passed = checkpass(total);
   displayResult(name, total, passed);
 }
-  
-     
