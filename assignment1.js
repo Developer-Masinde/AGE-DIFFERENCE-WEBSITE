@@ -33,12 +33,12 @@ function runProgram() {
 
 // // Javascript Events
 
-const button1 = document.getElementById("button1");
+const button = document.getElementById("button");
 
 
 //  event listener
 // single click.
-button1.addEventListener("click", function () {
+button.addEventListener("click", function () {
   
   console.log("The button was click");
 });
