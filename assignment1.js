@@ -1,28 +1,20 @@
-// Named Function
-function calculateTotal(math, english) {
-  return math + english;
-}
 
-// Arrow Function
-const checkpasspo = (total) => {
-  return total >= 20;
-};
 
-// Anonymous Function
-const displayResult = function (name, total, passed) {
-  let message = "student:" + name + "<br>";
-  message += "Total Marks:" + total + "<br>";
-  message += "status:" + (passed ? "passed ✔️" : "Failed ❌");
+// 
+// Programme1
+age = 18;
 
-  document.getElementById("output").innerHTML = message;
-};
+if (age < 18) document.write("Am a child <br>");
+if (age >= 18) document.write("Am an adult <br>");
 
-function runProgram() {
-      let name = document.getElementById("name").value;
-      let math = parseInt(document.getElementById("math").value);
-      let english = parseInt(document.getElementById("english").value);
+// // Javascript Events
 
-      let total = calculateTotal(math, english);
-      let passed = checkpass(total);
-      displayResult(name, total, passed);
-}
+const button1 = document.getElementById("button1");
+
+
+//  event listener
+// single click.
+button1.addEventListener("click", function () {
+  
+  console.log("The button was click");
+});
