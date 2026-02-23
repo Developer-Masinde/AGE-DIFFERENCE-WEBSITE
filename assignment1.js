@@ -28,7 +28,10 @@ function runProgram() {
   let age = parseInt(document.getElementById("age").value);
 
   let details = enterDetails(county,name,gender,age);
- displayResult(county,name,gender,age);
+  displayResult(county, name, gender, age);
+  
+  
+  document.getElementById("output").innerHTML = message;
 }
 
 // // Javascript Events
