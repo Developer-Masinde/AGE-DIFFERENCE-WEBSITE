@@ -23,6 +23,6 @@ function runProgram() {
   let english = parseInt(document.getElementById("english").value);
 
   let total = calculateTotal(math, english);
-  let passed = checkpass(total);
+  let passed = checkPass(total);
   displayResult(name, total, passed);
 }
