@@ -4,7 +4,7 @@ function calculateTotal(math, english) {
 }
 
 // Arrow Function
-const checkpasspo = (total) => {
+const checkPass = (total) => {
   return total >= 20;
 };
 
