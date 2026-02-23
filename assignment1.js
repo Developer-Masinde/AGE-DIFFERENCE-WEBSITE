@@ -1,47 +1,27 @@
-// Named function
-// Named Function
-function enterDetails( county,name, gender,age) {
-  return county +name + gender + age;
-}
-
-
-
 
 // Arrow Function
-const checkPasspo = (details) =>{
-  return details;
-  county + name + gender + age;
+const checkAge = (age) => {
+  return age >= 18;
 };
 
 
-// Programme1
-age = 18;
-
-if (age < 18) document.write("Am a child <br>");
-if (age >= 18) document.write("Am an adult <br>");
+// Anonymous Function
+const displayResult = function (county,name,gender,age) {
+  let results = "COUNTY:" + county + "<br>";
+ results += "NAME: " + name + "<br>";
+  results += "GENDER: " + gender + "<br>";
+  results += "AGE: " + age + "<br>";
+  document.getElementById("output").innerHTML = results;
+};
 
 
 function runProgram() {
   let county = document.getElementById("county").value;
-  let name = parseInt(document.getElementById("name").value);
-  let gender = parseInt(document.getElementById("gender").value);
+  let name = document.getElementById("name").value;
+  let gender = document.getElementById("gender").value;
   let age = parseInt(document.getElementById("age").value);
 
-  let details = enterDetails(county,name,gender,age);
-  displayResult(county, name, gender, age);
-  
-  
-  document.getElementById("output").innerHTML = message;
+  let ageChecker = checkAge(age);
+  displayResult (county,name,gender,age);
 }
 
-// // Javascript Events
-
-const button = document.getElementById("button");
-
-
-//  event listener
-// single click.
-button.addEventListener("click", function () {
-  
-  console.log("The button was click");
-});
