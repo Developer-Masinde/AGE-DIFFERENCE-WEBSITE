@@ -8,7 +8,7 @@ function enterDetails( county,name, gender,age) {
 
 
 // Arrow Function
-const checkpasspo = (details) =>{
+const checkPasspo = (details) =>{
   return details;
   county + name + gender + age;
 };
