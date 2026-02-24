@@ -266,3 +266,10 @@ box.addEventListener("mouseout", function () {
 
   box.innerHTML = "Mouse is out!";
 });
+
+// javascripts string bmethods
+// string methods allow manipulation and transformation of strings values.
+
+// Lengthy property
+let text = "Am learning web developoment"
+console.log(text.length);
