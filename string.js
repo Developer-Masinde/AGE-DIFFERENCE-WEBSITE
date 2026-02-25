@@ -39,3 +39,18 @@ console.log(myName+ "" + myCourse + "" + school);
 
 console.log(myName+myCourse+school);
 
+// Javascript Arrays
+const courses = ["Web Design", "Cyber security", "Digital Marketing", "Computer Repair"];
+console.log(courses);
+
+// '' to view a single element
+let course1 = courses[2];
+console.log(course1);
+
+//  ''replace an index
+courses[0] = "Web Development"
+console.log(courses);
+
+// ''conversion from array to string
+let newcourses = courses.toString();
+console.log(newcourses);
