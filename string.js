@@ -54,3 +54,13 @@ console.log(courses);
 // ''conversion from array to string
 let newcourses = courses.toString();
 console.log(newcourses);
+
+// array and obect
+const person = ["John", "Doe", 46];
+const person2 = { firstName: "John", lastName: "Doe", age: 46 };
+// Type of operator
+let type1 = typeof person;
+console.log(type1);
+
+let type2 = typeof person2;
+console.log(type2);
