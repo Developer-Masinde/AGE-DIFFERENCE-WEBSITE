@@ -1,4 +1,4 @@
-
+ 
 // Arrow Function
 const checkAge = (age) => {
   return age >= 18;

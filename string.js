@@ -64,3 +64,4 @@ console.log(type1);
 
 let type2 = typeof person2;
 console.log(type2);
+
