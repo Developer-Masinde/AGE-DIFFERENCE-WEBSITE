@@ -16,10 +16,10 @@ console.log(text4.slice(0, 2));
 let text5 = "Am learning web developoment and App";
 console.log(text5.slice(4,9));
 
-let sentence = "I love JavaScript.JavaScript is fun";
+let text6 = "I love JavaScript.JavaScript is fun";
 
-console.log(sentence.replace("JavaScript","PHP"));
-console.log(sentence.replaceAll("JavaScript", "PHP"));
+console.log(text6.replace("JavaScript","PHP"));
+console.log(text6.replaceAll("JavaScript", "PHP"));
 
 
 let userInput = " welcome Home! ";
