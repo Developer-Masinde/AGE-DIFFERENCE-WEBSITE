@@ -64,13 +64,27 @@ switch (day) {
   case 2:
     console.log("Tuesday");
     break;
-  default;
-    console.log("Anither day");
+  default:
+    console.log("Another day");
     
 }
  
 // 7) For Loop statements
 // Used when you know how many times you want to repeat Code.
+// loop- jumping
 for (let i = 0; i < 5; i++) {
   console.log(i); 
 }
+
+// 8) while loop
+// used when you dont know exactly how many times to repeat.
+ let count = 0;
+
+while (count < 5) {
+  console.log(count);
+  
+  count++;   
+}
+ 
+// 9) return statement
+// used inside a function to return a value.
