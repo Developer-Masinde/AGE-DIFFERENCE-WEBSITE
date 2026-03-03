@@ -29,9 +29,13 @@ if (age > 18) {
 
 if (age > 18) {
   console.log("Adult");
-} else {
-  console.log("minor");
 }
+
+else (age < 18); {
+    console.log("minor");
+}
+
+
 
 // 5) else if statements
 // used more than 2 conditions
@@ -39,20 +43,20 @@ let score = 85;
 
 
 if (score >= 90) {
-   console.log("Grade: A");
+  console.log("Grade: A");
 }
 else if (score >= 80) {
   console.log("Grade: B");
- }
+}
 else if (score >= 70) {
   console.log("Grade: C");
- }
-else{
+}
+else (score >= 80); {
   console.log("Grade: F");
 }
  
 // 6) Switch statements
-// Used when yoy have many possible values
+// Used when you have many possible values
 
 // *to use variable inside a function, must be put inside a parameter.
 
@@ -82,8 +86,8 @@ for (let i = 0; i < 5; i++) {
 
 while (count < 5) {
   console.log(count);
-  
-  count++;   
+ 
+  count++;
 }
  
 // 9) return statement
