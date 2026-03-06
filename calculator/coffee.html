@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-image: url("pexels-clickerhappy-9315.jpg");
+        grid-template-areas: "header header logo";
+      }
+      #header {
+        grid-area: header;
+        color: rgb(245, 241, 240);
+        font-size: x-large;
+      }
+
+      #logo {
+        display: grid;
+        grid-area: logo;
+        justify-self: end;
+      }
+
+      #table {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+      #table th {
+        background-color: rgb(59, 39, 24);
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+        border: 2px 2px 2px 2px;
+
+      }
+      #table tr {
+        background-color: rgb(59, 65, 63);
+      }
+      #table tr,
+      td {
+        background-color: rgb(100, 44, 4);
+        padding: 50px 50px 50px 50px;
+        border-radius: 5px 5px 5px 5px;
+        border: 2px 2px 2px 2px;
+      }
+
+      #result {
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        display: grid;
+      }
+
+      button {
+        background-color: rgb(24, 10, 1);
+        padding: 20px 20px 20px 20px;
+        border-radius: 5px 5px 5px 5px;
+        border: 2px 2px 2px 2px;
+        cursor: pointer;
+        color: aliceblue;
+      }
+
+      button:hover {
+        color: orange;
+      }
+      button:active {
+        color: rgb(247, 242, 240);
+      }
+      h1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: rgb(245, 241, 240);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <b>Form Ya Coffee Kajoint</b>
+      <img id="logo" src="./coffe mug.jpg" height="150px" width="200px" />
+    </header>
+
+    <h1>MENU</h1>
+    <div id="table">
+      <table>
+        <tr>
+          <th>Coffee Type</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+          <td>Ksh.250/=</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Caffe latte</td>
+          <td>Ksh.300/=</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>White Coffee</td>
+          <td>Ksh.150/=</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="result">
+      <button>Total Cost</button>
+      <br />
+      <button id="TotalDisplay"></button>\
+      <br />
+      <button>Submit Order</button>
+    </div>
+  </body>
+
+  <script src="./coffee.js"></script>
+</html>
