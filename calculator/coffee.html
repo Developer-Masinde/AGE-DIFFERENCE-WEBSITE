@@ -32,7 +32,6 @@
         color: white;
         border-radius: 5px 5px 5px 5px;
         border: 2px 2px 2px 2px;
-
       }
       #table tr {
         background-color: rgb(59, 65, 63);
@@ -45,7 +44,7 @@
         border: 2px 2px 2px 2px;
       }
 
-      #result {
+      #resultTotal {
         align-items: center;
         justify-content: center;
         margin-top: 10px;
@@ -92,26 +91,33 @@
         <tr>
           <td>Cappuccino</td>
           <td>Ksh.250.00</td>
-          <td></td>
+          <td id="qty1" value="0" placeholder="Enter Quantity">
+            <input type="number" />
+          </td>
         </tr>
         <tr>
           <td>Caffe latte</td>
           <td>Ksh.300.00</td>
-          <td></td>
+          <td id="qty2" value="0" placeholder="Enter Quantity">
+            <input type="number" />
+          </td>
         </tr>
         <tr>
           <td>White Coffee</td>
           <td>Ksh.150.00</td>
-          <td></td>
+          <td id="qty3" value="0" placeholder="Enter Quantity">
+            <input type="number" />
+          </td>
         </tr>
       </table>
     </div>
-    <div id="result">
-      <button>Total Cost</button>
-      <br />
-      <button >Submit Order</button>
-      <br />
-      <button> Ksh.0.00 </button>
+    <div id="resultTotal">
+      <button onclick="total()">Total Cost</button>
+      <button onclick="submit()">Submit Order</button>
+      
+      <button  id="total_cost" >
+        Ksh.0.00</button>
+     
     </div>
   </body>
 

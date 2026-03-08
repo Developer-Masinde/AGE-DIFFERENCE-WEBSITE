@@ -1,14 +1,16 @@
 function total() {
   var Cappuccino;
-  var Caffe latte;
-  var White Coffee;
+  var Caffelatte;
+  var Whitecoffee;
   var sum;
    Cappuccino= parseInt(document.getElementById("qty1").value);
-   Caffe latte= parseInt(document.getElementById("qty2").value);
-   White Coffee= parseInt(document.getElementById("qty3").value);
-  sum = Cappuccino * 250 + Caffe latte  * 300 + White Coffee * 150;
-  document.getElementById("Total-cost").innerHTML = "Ksh " + sum + ".00";
+   Caffelatte= parseInt(document.getElementById("qty2").value);
+   Whitecoffee= parseInt(document.getElementById("qty3").value);
+  sum = Cappuccino * 250 + Caffelatte  * 300 + Whitecoffee * 150;
+  document.getElementById("total-cost").innerHTML = "Ksh " + sum + ".00";
 }
-function submit() {
-  alert("Your Order has been Submitted, Successfully!");
+  
+  function submit() {
+    alert("Your Order has been Submitted, Successfully!");
 }
+
