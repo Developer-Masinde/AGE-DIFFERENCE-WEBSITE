@@ -7,7 +7,7 @@ function total() {
    Caffelatte= parseInt(document.getElementById("qty2").value);
    Whitecoffee= parseInt(document.getElementById("qty3").value);
   sum = Cappuccino * 250 + Caffelatte  * 300 + Whitecoffee * 150;
-  document.getElementById("total-cost").innerHTML = "Ksh " + sum + ".00";
+  document.getElementById("Total-cost").innerHTML = "Ksh " + sum + ".00";
 }
   
   function submit() {
