@@ -11,6 +11,6 @@ function total() {
 }
   
   function submit() {
-    alert("Your Order has been Submitted, Successfully kindly wait patiently beloved high estemeed customer!");
+    alert("Your Order has been Submitted successfully, kindly wait patiently beloved high estemeed customer!");
 }
 
