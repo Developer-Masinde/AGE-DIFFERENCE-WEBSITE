@@ -28,7 +28,7 @@
         justify-content: center;
       }
       #table th {
-        background-color: rgb(59, 39, 24);
+        background-color: black;
         color: white;
         border-radius: 5px 5px 5px 5px;
         border: 2px 2px 2px 2px;
@@ -81,6 +81,7 @@
         gap: 15px;
         height: auto;
         width: auto;
+       
       }
 
             img {
@@ -94,16 +95,72 @@
         background-color: rgb(75, 34, 5);
       }
 
+      h2 {
+        color: rgb(247, 244, 243);
+      }
+      #nav-bar {
+        background-color: rgb(7, 3, 0);
+        
+      }
+      #nav-bar li {
+         text-decoration: none;
+      }
+      #nav-bar ul,li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        color: chocolate;
+        justify-self: right;
+       
+        
+      }
+      #nav-bar :hover{
+        cursor: pointer;
+        color: rgb(194, 152, 122);
+      }
+
+        #footer-section {
+          background-color: rgb(7, 3, 0);
+        }
+
+              #footer-section ul,li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        color: rgb(252, 117, 6);
+        justify-self: left;
+        
+        
+      }
+            #footer-section :hover{
+        cursor: pointer;
+        color: rgb(194, 152, 122);
+      }
+
     </style>
   </head>
   <body>
-        <div id="header">
+
+         <div id="nav-bar">
+           <ul>
+            <li><a href="about.html">ABOUT-US</a></li>
+            <li><a href="./product.html">PRODUCTS</a></li>
+            <li><a href="branches.html">BRANCHES</a></li>
+           </ul>
+         </div>
+
+       
              <header id="header">
-      <b>Form Ya Coffee Kajoint</b>
+          <h2>
+             <b>Form Ya Coffee Kajoint</b> <br>
+      <b>A sip of coffee awakens the day☕</b>
+          </h2>
       
  </header>
 
-        </div>
+       
 
 
     <h1>MENU</h1>
@@ -119,23 +176,36 @@
         <tr>
           <td>Cappuccino</td>
           <td>Ksh.250.00</td>
-          <td id="qty1" value="0" placeholder="Enter Quantity">
-            <input type="number" />
+          <td>
+                 <input
+             type="number"
+            id="qty1" 
+          value="0" 
+          placeholder="Enter Quantity">
           </td>
         </tr>
         <tr>
           <td>Caffe latte</td>
           <td>Ksh.300.00</td>
-          <td id="qty2" value="0" placeholder="Enter Quantity">
-            <input type="number" />
+          <td> 
+            <input
+             type="number"
+            id="qty2" 
+          value="0" 
+          placeholder="Enter Quantity">
           </td>
         </tr>
         <tr>
           <td>White Coffee</td>
           <td>Ksh.150.00</td>
-          <td id="qty3" value="0" placeholder="Enter Quantity">
-            <input type="number" />
+          <td>
+                <input
+             type="number"
+            id="qty3" 
+          value="0" 
+          placeholder="Enter Quantity">
           </td>
+      
         </tr>
       </table>
     </div>
@@ -152,10 +222,18 @@
 
     <div id="resultTotal">
       <button onclick="total()">Total Cost</button>
-      <button onclick="submit()">Submit Order</button>
-      <button> Ksh.0.00</button>
-     
+      <button onclick="submitOrder()">Submit Order</button>
+       <p> Ksh.0.00</p>
     </div>
+
+   <footer id="footer-section">
+           <ul>
+            <li>OFFER-DAYS</li>
+            <li>WORKING-HRS</li>
+           </ul>
+         </div>
+
+   </footer>
   </body>
 
   <script src="./coffee.js"></script>

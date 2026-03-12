@@ -9,10 +9,11 @@ function total() {
   sum = Cappuccino * 250 + Caffelatte  * 300 + Whitecoffee * 150;
   document.getElementById("Total-cost").innerHTML = "Ksh " + sum + ".00";
 }
-function Totalcost() {
-  document.getElementById("Total-cost").innerHTML = "Ksh " + sum + ".00";
-  }
+
   function submit() {
     alert("Your Order has been Submitted successfully, kindly wait patiently dear estemeed customer!");
 }
+
+
+
 
