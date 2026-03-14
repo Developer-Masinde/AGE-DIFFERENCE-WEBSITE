@@ -7,7 +7,8 @@
 
     <style>
       body {
-        background-color: rgb(168, 80, 18);
+        background-image: url("coffee\ beans.jpg");
+        
       }
 
       .table {
@@ -18,20 +19,93 @@
       .table th {
         color: chocolate;
       }
+
+      #container-photos {
+         display: flex;
+         grid-template-columns: repeat(3,);
+         gap: 64px;
+         margin-bottom: 25px;
+        
+        
+      }
+        h1 {
+          color: chocolate;
+        }
+        #top h2 {
+          color: rgb(228, 101, 10);
+
+        }
+
+        #logo {
+          justify-self:right;
+        }
+         #logo p {
+          color: rgb(211, 116, 49);
+         }
+
+      #talk {
+        color: rgb(105, 95, 87);
+        padding-left: 100px;
+       
+      }
+
+       #footer,h4 {
+        background-color: rgb(184, 123, 80);
+        color: rgb(12, 11, 9);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+       }
+       #hr {
+        color: white;
+        background-color: rgb(126, 63, 18);
+     
+       }
+
+        #nav-bar {
+        background-color: rgb(110, 50, 4);
+        
+      }
+
+      #nav-bar ul,li,a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        color: chocolate;
+        justify-self: right;
+        list-style-type: none;
+        text-decoration: none;
+       
+        
+      }
+      #nav-bar :hover{
+        cursor: pointer;
+        color: rgb(194, 152, 122);
+      }
+       
     </style>
 </head>
 <body>
+<nav id="nav-bar">
+  <ul>     
+        <li><a href="coffee.html">HOME</a></li>
+        <li><a href="about.html">ABOUT-US</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="branches.html">BRANCHES</a></li>
+    </ul>
+</nav>
+   
     
-     
-    <nav>
-  </ul>     
-        <li><a href="cofffee.html"></a>Home Page</li>
-        <li><a href="about.html"></a>about us</li>
-        <li><a href="product.html"></a>product</li>
-        <li><a href="branches.html"></a>branches</li>
-      </ul>
-    </nav>
-           <h1>Kajoint Coffee products</h1>
+  
+           <div id="logo">
+            <img src="./coffee cup with light.jpg" alt="" height="200" width="190">
+               <p><b>Sip for healthy living</b></p>
+
+           </div>
+
+        
+           <h1>Kajoint Coffee Ever trusted products</h1>
           <table class="table">
             <tr>
               <th>COFFEE PRODUCTS</th>
@@ -46,9 +120,36 @@
               <td>Coffee Capsules</td>
             </tr>
           </table>
+
+               <div id="container-photos">
+
+                <img src="./coffee beans.jpg" alt="" height="300" width="200">
+
+                <img src="./ready coffee.jpg" alt="" height="300" width="200">
+
+                <div id="talk">
+                  <img src="./cofee beans jar.jpg" alt="" height="250" width="250">
+                  <h3><b>Coffee Kajoint products are naturally extracted from the ground. <br>
+                  We are number 1 coffee maker with the best products in the world. <br>
+                  We import the coffee products as grade one from Ghana,Kakuma.
+                </b></h3>
+     
+
+                </div>
+        
+               </div>        
             
           
-     
+<div id="footer">
+   <footer>
+   <h4>KARIBU KAJOINT.</h4>
+
+   </footer>
+</div>
+
+  <div id="hr">
+     <hr> &copy; Them Masinde The Developer 2025. 
+  </div> 
 
 
 

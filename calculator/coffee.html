@@ -7,7 +7,7 @@
 
     <style>
       body {
-        background-image: url("pexels-clickerhappy-9315.jpg");
+        background-image: url("./pexels-clickerhappy-9315.jpg");
         grid-template-areas: "header header logo";
       }
       #header {
@@ -48,6 +48,12 @@
         align-items: center;
         justify-content: center;
         display: grid;
+      }
+      #resultTotal p {
+        background-color: rgb(247, 114, 19);
+        color: black;
+        padding: 40px 50px;
+        
       }
 
       button {
@@ -102,16 +108,17 @@
         background-color: rgb(7, 3, 0);
         
       }
-      #nav-bar li {
-         text-decoration: none;
-      }
-      #nav-bar ul,li {
+      
+      
+      #nav-bar ul,li,a {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px 16px;
         color: chocolate;
         justify-self: right;
+        list-style-type: none;
+        text-decoration: none;
        
         
       }
@@ -139,19 +146,25 @@
         color: rgb(194, 152, 122);
       }
 
+   
+
     </style>
   </head>
   <body>
 
          <div id="nav-bar">
-           <ul>
+
+                <ul>
+            <li><a href="coffee.html">HOME</a></li>
             <li><a href="about.html">ABOUT-US</a></li>
             <li><a href="./product.html">PRODUCTS</a></li>
             <li><a href="branches.html">BRANCHES</a></li>
-           </ul>
-         </div>
+             </ul>
 
-       
+         </div>
+     
+     
+
              <header id="header">
           <h2>
              <b>Form Ya Coffee Kajoint</b> <br>
@@ -160,9 +173,8 @@
       
  </header>
 
-       
 
-
+        
     <h1>MENU</h1>
     <div id="card-container">
       
@@ -208,6 +220,7 @@
       
         </tr>
       </table>
+         
     </div>
        
     <div>
@@ -218,12 +231,13 @@
       <img src="./takingCoffee.jpg" alt="profile-img2">
     </div>
     </div>
-
+       
+       
 
     <div id="resultTotal">
       <button onclick="total()">Total Cost</button>
       <button onclick="submitOrder()">Submit Order</button>
-       <p> Ksh.0.00</p>
+         <p id="total"> Ksh.0.00</p>
     </div>
 
    <footer id="footer-section">
@@ -236,5 +250,5 @@
    </footer>
   </body>
 
-  <script src="./coffee.js"></script>
+  <script src="./artcaffee.js"></script>
 </html>
