@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+   
+      <style>
+body {
+    background-image: url("../IMAGERYS/background-paint.jpg") ;
+     background-size: cover;        /* Makes image fill the screen */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents repeating */
+}
+
+  #nav-bar {
+        background-color: rgb(22, 22, 22);
+        position: sticky;
+        top: 0; /* Stays at 0 pixels from the top of the viewport */
+        width: 100%; /* Ensures it spans the full width of the screen */
+        z-index: 1000; /* Ensures it stays above other content */
+      }
+      
+      #nav-bar ul,
+      li
+       {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        color: yellow;
+        
+        list-style-type: none;
+        text-decoration: none;
+      }
+      #logo {
+        justify-self: right;
+      }
+
+      #nav-bar :hover {
+        cursor: pointer;
+        color: black;
+      }
+
+
+
+       h1 {
+            color: black;
+        text-align: center;
+        justify-content: center;
+        display: inline-flex;
+        background-color: #fff;
+        margin-left: 40%;
+       }
+     
+       #container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 100px;
+        margin-left: 15%;
+        
+       }
+       #container img {
+        object-fit: cover;
+        display:  flex;
+        width: 80%;
+        height: 87%;
+        margin-left: 45%;
+        margin-top: 2%;
+        
+       }
+       #abt h3,p {
+        color: rgb(253, 249, 249);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-left: 10%;
+      
+       }
+       #abt h3 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: xx-large;
+       }
+        #Socials {
+          background-color: black;
+          color: white;
+          display: block;
+          align-items: center;
+          justify-content: center;
+          font-size: larger;
+          margin-left: 30%;
+          margin-right: 50%;
+        }
+          
+          /* SHADOW EFFECT */
+          body {
+  background: #f5f5f5; /* light background to make shadows visible */
+  font-family: Arial, sans-serif;
+}
+
+/* 🔹 NAV BAR SHADOW */
+#nav-bar {
+  background: white;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 🔹 LOGO SHADOW */
+#logo img {
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 🔹 MAIN CONTAINER (CARD STYLE) */
+#container {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+  
+      </style>
+  
+</head>
+<body>
+       <nav id="nav-bar">
+      
+        <ul>
+            <li><b>More-info</b></li>
+            <li><b>Address</b></li>
+            <li><b>News</b></li>
+
+        </ul>
+       
+       </nav>
+       <div id="logo">
+        <img src="../IMAGERYS/Web logo.jpg" alt="" width="80" height="80">
+
+       </div>
+
+                     <h1 id="paint">Iam Joel Masinde
+                        <br>
+                         The Web Developer
+                     </h1>
+                    
+
+                     <div id="container">
+                         <div>
+                            <img src="../IMAGERYS/web hand code background.jpg" alt="">
+                         </div>
+
+                        <div id="abt">
+                         <h3>About Us</h3>
+                           <b>       <p>ThemMasinde delivers high quality work with a focus on simplicity to unleash the power of information technology to all humans.
+                         We specialized in web development,web design and website maintenance
+                         We perform our task based on clients desire and the end result is always worth it.
+                         We utilize the minimal time possible to produce a perfect end result.</p></b>
+                         
+                        </div>
+                     </div>
+                                 <br>
+                     <div id="Socials">
+                         <h4><b>Social Media Handles.</b></h4>
+                             <a href=""><i class="fab fa-instagram"> @masindeWeb</i></a> <br><br>
+                            <a href=""><i class="fab fa-whatsapp"> +254716499037</i></a> <br><br>
+                             <a href=""><i class="fab fa-facebook"> MasindeWeb</i></a> <br>
+                     </div>
+
+
+      
+                <hr>&copy;<b>2026 Them Masinde. All rights reserved.</b>
+
+
+
+</body>
+</html>

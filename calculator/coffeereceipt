@@ -1,0 +1,53 @@
+
+function total() {
+
+  let price1 = 250;
+  let price2 = 300;
+  let price3 = 150;
+
+  let qty1 = Number(document.getElementById("qty1").value);
+  let qty2 = Number(document.getElementById("qty2").value);
+  let qty3 = Number(document.getElementById("qty3").value);
+
+  let totalCost = (price1 * qty1) + (price2 * qty2) + (price3 * qty3);
+
+  document.getElementById("total").innerText = "Ksh." + totalCost.toFixed(2);
+}
+
+function submitOrder(){
+
+  let price1 = 250;
+  let price2 = 300;
+  let price3 = 150;
+
+  let qty1 = Number(document.getElementById("qty1").value);
+  let qty2 = Number(document.getElementById("qty2").value);
+  let qty3 = Number(document.getElementById("qty3").value);
+
+  let totalCost = (price1 * qty1) + (price2 * qty2) + (price3 * qty3);
+
+  let receiptText = "";
+
+  if(qty1 > 0){
+    receiptText += "Cappuccino x " + qty1 + " = Ksh." + (qty1*price1) + "<br>";
+  }
+
+  if(qty2 > 0){
+    receiptText += "Caffe latte x " + qty2 + " = Ksh." + (qty2*price2) + "<br>";
+  }
+
+  if(qty3 > 0){
+    receiptText += "White Coffee x " + qty3 + " = Ksh." + (qty3*price3) + "<br>";
+  }
+
+  document.getElementById("receiptItems").innerHTML = receiptText;
+  document.getElementById("receiptTotal").innerHTML = "Total: Ksh." + totalCost.toFixed(2);
+
+}
+
+             
+  gsap.to(cube.rotation, {
+    y: Math.PI * 2,
+    duration: 2,
+    repeat: -1,
+  });

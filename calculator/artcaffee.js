@@ -1,43 +1,36 @@
-function total() {
-  let cappuccinoPrice = 250;
-  let caffeLatterPrice = 300;
-  let whiteCoffeePrice = 150;
 
-  // Get Quantities from inputs
-  let qty1 = document.getElementById("qty1").value;
-  let qty2 = document.getElementById("qty2").value;
-  let qty3 = document.getElementById("qty3").value;
 
-  // Convert empty inputs to 0
-  qty1 = qty1 ? parseInt(qty1) : 0;
-  qty1 = qty2 ? parseInt(qty2) : 0;
-  qty1 = qty3 ? parseInt(qty3) : 0;
+function printReceipt() {
+  const receiptContent = document.getElementById("receipt").innerHTML;
 
-  // calculate totals
-  let totalCost =
-    qty1 * cappuccinoPrice + qty2 * caffeLatterPrice + qty3 * whiteCoffeePrice;
+  const printWindow = window.open("", "", "width=400,height=600");
 
-  //   Display result
-  document.getElementById("total").innerHTML = "Ksh." + totalCost.toFixed(2);
+  printWindow.document.write(`
+    <html>
+      <head>
+        <title>Receipt</title>
+        <style>
+          body {
+            font-family: Arial;
+            padding: 20px;
+          }
+          h2 {
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        ${receiptContent}
+      </body>
+    </html>
+  `);
+
+  printWindow.document.close();
+  printWindow.print();
 }
 
-    
-function submitOrder() {
- let qty1 = document.getElementById("qty1").value;
- let qty2 = document.getElementById("qty2").value;
-  let qty3 = document.getElementById("qty3").value;
+
+
+
+
   
-
-  alert(
-    "Order Submitted \n\n" +
-    "Cappuccino:" +
-    qty1 +
-    "\n" +
-    "Caffee Latte:" +
-    qty2 +
-    "\n" +
-    "White Coffee" +
-    qty3 , 
-  );
-}
-

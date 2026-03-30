@@ -14,10 +14,18 @@
       .table {
         background-color: rgb(54, 24, 3);
         color: antiquewhite;
-        padding: 50px 50px 50px 50px;
+        padding: 50px 1070px 50px 620px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
       }
       .table th {
-        color: chocolate;
+        color: rgb(252, 109, 6);
+          align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: xx-large;
       }
 
       #container-photos {
@@ -25,7 +33,8 @@
          grid-template-columns: repeat(3,);
          gap: 64px;
          margin-bottom: 25px;
-        
+         margin-top: 25px;
+       
         
       }
         h1 {
@@ -49,21 +58,19 @@
        
       }
 
-       #footer,h4 {
-        background-color: rgb(184, 123, 80);
-        color: rgb(12, 11, 9);
-        align-items: center;
-        justify-content: center;
-        display: flex;
-       }
+    
        #hr {
-        color: white;
-        background-color: rgb(126, 63, 18);
+         color: white;
+         background-color: rgb(151, 69, 6);
      
        }
 
         #nav-bar {
         background-color: rgb(110, 50, 4);
+          position: sticky;
+        top: 0; /* Stays at 0 pixels from the top of the viewport */
+        width: 100%; /* Ensures it spans the full width of the screen */
+        z-index: 1000; /* Ensures it stays above other content */
         
       }
 
@@ -83,11 +90,168 @@
         cursor: pointer;
         color: rgb(194, 152, 122);
       }
-       
+      
+#footer {
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: left;
+        display: flex;
+       }
+        #container-foot {
+             grid-template-columns: repeat(4,1fr);
+          display: grid;
+          gap: 40px;
+          margin-left: 40px; 
+        }
+         #point-one {
+          background-color: rgb(250, 117, 22);
+         }
+        #point-socials {
+          background-color: rgb(129, 57, 5);
+        }
+       #point-three {
+        background-color: rgb(134, 90, 58);
+       }
+        
+      #Contact {
+        background-color: rgb(61, 26, 2);
+      } 
+      #hr {
+        align-items: center;
+        justify-content: center;
+        display:block;
+        background-color: white;
+        color: black;
+        padding-left: 40%;
+          }
+      
+/*    
+      MAKING RESPONSIVE  */
+      /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+#nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #333;
+  flex-wrap: wrap;
+}
+
+#nav-bar ul li {
+  margin: 10px;
+}
+
+#nav-bar ul li a {
+  color: rgb(248, 108, 8);
+  text-decoration: none;
+}
+
+/* LOGO */
+#logo {
+  text-align: center;
+  padding: 20px;
+}
+
+#logo img {
+  width: 150px;
+  max-width: 100%;
+}
+
+/* TABLE */
+.table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 400px;
+}
+
+.table th, .table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+/* PHOTOS SECTION */
+#container-photos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#container-photos img {
+  width: 200px;
+  max-width: 100%;
+}
+
+#talk {
+  text-align: center;
+  max-width: 300px;
+}
+
+/* FOOTER */
+#container-foot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+#container-foot div {
+  font-size: 14px;
+}
+
+/* COPYRIGHT */
+#hr {
+  text-align: center;
+  padding: 10px;
+}
+
+/* 📱 MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container-foot {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #container-photos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
     </style>
 </head>
 <body>
-<nav id="nav-bar">
+  <nav id="nav-bar">
   <ul>     
         <li><a href="coffee.html">HOME</a></li>
         <li><a href="about us.html">ABOUT US</a></li>
@@ -140,19 +304,53 @@
                </div>        
             
           
-<div id="footer">
-   <footer>
-   <h4>KARIBU KAJOINT.</h4>
+          <footer>
+          <div id="footer">
+         <div id="container-foot">
+             <div id="point-one">  
+                <p><b>OPERATION HOURS</b></p>
+                Monday-Wednesday 8:00am - 10:00pm.
+                <br>
+                Thursday-Friday  9:00am - 10:00pm.
+                <br>
+                Saturday         10:00am -11;59pm.
+                <br>
+                We are closed on all National Holidays.
 
-   </footer>
-</div>
+             </div>
+                <div id="point-socials">
+                  <p><b>Our Social Media Handles</b>.</p>
+                
+        <a href=""><i class="fab fa-github"></i>Kajoint Developers</a>
+        <a href=""><i class="fab fa-facebook"> Sip Kajoint</i></a>
+        <a href=""><i class="fab fa-whatsapp"> +254716499037</i></a>
+        <a href=""><i class="fab fa-instagram"> @Kajoint Sip</i></a>
+       
+
+                </div>
+                <div id="point-three">
+                   <p><b>Quick Links</b></p>
+                   Home <br>
+                   Products <br>
+                   Branches <br>
+                   About-Us
+                </div>
+                <div id="Contact">
+                <p><b>Contct Info:</b></p>
+                    <br>
+                   Tell: +254716499037
+                   <br>
+                   Email: kajointcofee@gmail.com
+                   <br>
+                </div>
+         </div>     
+      </footer>
+
 
   <div id="hr">
-     <hr> &copy; Them Masinde The Developer 2025. 
-  </div> 
-
-
-
-
+     <hr> &copy; <b>Them Masinde Web Developer: 2026. </b>
+  </div>
 </body>
+
+
 </html>
